@@ -1,0 +1,118 @@
+@charset "utf-8";
+/*CSS DOCUMENT*/
+
+body { /*baground*/
+	margin-left: 450px;
+	padding: 50px;
+	font-family: Arial, sans-serif;
+	background: url(tekno.jpg) no-repeat center center fixed;
+	background-size: cover;
+	height: 100vh;
+	align-items: center;
+	justify-content: center;
+}
+
+/*NAV BAR*/
+
+.navigation nav {
+	margin-left: 540px;
+	margin-bottom: 50px;
+}
+
+nav {
+	background: white;
+	width: 360px;
+	display: flex;
+	justify-content: space-between; /*jarak antara kata (between = sampai pinggir)(around = tidak sampai pinggir)*/
+	padding: 5px; /*jarak setiap sisi*/
+	border-radius: 22px; /*siku-siku*/
+	box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.3);
+}
+
+nav > a {
+	color: black;
+	text-decoration: none; /*membuat teks menjadi netral*/
+	padding: 8px 16px;
+	border-radius: 22px;
+}
+
+nav > a:hover {
+	transition: 0.25s; /*berapa lama transisi warna*/
+	background: red; /*warna transisi*/
+	color: white; /*transisi warna pada huruf*/
+}
+
+/*CONTENT*/
+.content { /*balon login*/
+	background: rgba(225, 225, 225, 0.8);
+	padding: 30px;
+	border-radius: 10px; /*untuk siku2*/
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+	width: 500px;
+	text-align: center;
+}
+
+.content h1 { /*tulisan login*/
+	margin-bottom: 20px;
+	text-transform: uppercase;
+	text-shadow: 0px 0px 5px white;
+	letter-spacing: 3px; /*space antara huruf*/
+	color: red;
+}
+
+.content hr {
+    background-color: black;
+    height: 3px;
+}
+
+.content select {
+    background-color: red;
+    color: white;
+    padding: 5px;
+    cursor: pointer;
+	border: none;
+	border-radius: 5px;
+}
+
+.content label {
+    color: red;
+    text-shadow: 0px 0px 5px white;
+}
+
+.content input { /*2 balon*/
+    text-align: center;
+	width: 30%;
+	padding: 5px;
+	margin-bottom: 10px;
+	border: 1px solid ;
+	border-color: red;
+	border-radius: 5px;
+	box-shadow: 0px 0px 10px red; /*bayangan*/
+    cursor: pointer;
+}
+
+.content button {
+	background-color: red;
+	color: white;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	box-shadow: 0px 0px 10px white;
+	cursor: pointer; /*merubah kursor jadi bentuk jari*/
+}
+
+.content button:hover {
+	background-color: #800000;
+}
+
+.content #result {
+    padding-top: 15px;
+    color: red;
+    text-shadow: 0px 0px 5px white;
+}
+
+@media (max-width: 480px) {
+	.login {
+		width: 80%;
+	}
+}

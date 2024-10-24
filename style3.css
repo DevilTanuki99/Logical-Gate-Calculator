@@ -1,0 +1,96 @@
+@charset "utf-8";
+/*CSS DOCUMENT*/
+
+body { /*baground*/
+    width: 500px;
+	margin-left: 50px;
+    margin-right: 400px;
+	padding: 50px;
+	font-family: Arial, sans-serif;
+	background: url(tekno.jpg) no-repeat center center fixed;
+	background-size: cover;
+	height: 100vh;
+	align-items: center;
+	justify-content: center;
+}
+
+/*NAV BAR*/
+.navigation {
+    margin-left: 400px;
+}
+
+.navigation nav {
+	margin-left: 540px;
+	margin-bottom: 50px;
+}
+
+nav {
+	background: white;
+	width: 360px;
+	display: flex;
+	justify-content: space-between; /*jarak antara kata (between = sampai pinggir)(around = tidak sampai pinggir)*/
+	padding: 5px; /*jarak setiap sisi*/
+	border-radius: 22px; /*siku-siku*/
+	box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.3);
+}
+
+nav > a {
+	color: black;
+	text-decoration: none; /*membuat teks menjadi netral*/
+	padding: 8px 16px;
+	border-radius: 22px;
+}
+
+nav > a:hover {
+	transition: 0.25s; /*berapa lama transisi warna*/
+	background: red; /*warna transisi*/
+	color: white; /*transisi warna pada huruf*/
+}
+
+/*GAMBAR ANGGOTA*/
+#anggota {
+    width: 1100px;
+    padding: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+    
+}
+
+#anggota .icon {
+    background-color: white ;
+    width: 300px;
+    height: 340px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    float: left;
+    border-radius: 20px;
+    padding: 20px;
+    margin-left: 17px;
+    margin-top: 17px;
+}
+
+#anggota .icon img {
+    margin-left: 50px;
+    width: 200px;
+    padding: 5px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.3);
+}
+
+#anggota .icon h1 {
+    text-align: justify;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    width: 250px;
+    height: auto;
+    margin-left: 22px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    border-radius: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    align-content: center;
+}
+
+#anggota .icon h2 {
+    text-align: center;
+}
